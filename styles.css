@@ -1,0 +1,155 @@
+.nav-item {
+  margin-left: 60px;
+}
+.navbar-brand {
+  margin-left: 100px;
+}
+#right-nav {
+  margin-left: 350px;
+}
+nav .navbar-nav li a {
+  color: white !important;
+}
+.dropdown {
+  margin-top: 50px;
+  margin-left: 130px;
+}
+.dropdown {
+  display: inline-block;
+}
+.search-container {
+  display: inline-block;
+  margin-left: 550px;
+}
+.card {
+  display: inline-block;
+  margin-left: 150px;
+  margin-top: 100px;
+}
+#dropdownMenuButton {
+  padding-right: 100px;
+}
+#available-date {
+  margin-left: 40px;
+}
+
+#searchImage {
+  width: 30px;
+  height: 30px;
+}
+
+#available-date-p {
+  display: inline-block;
+}
+#start-price-p {
+  display: inline-block;
+  margin-left: 35px;
+}
+.card-body {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+#book-now {
+  padding-top: 15px;
+  background-color: #004675;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.card-body #book-now a {
+  color: white !important;
+}
+#hotel-name {
+  display: inline-block;
+}
+
+#hotel-logo {
+  display: inline-block;
+  height: 80px;
+  margin-left: 50px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #004675;
+  color: white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #004675;
+  color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#first-name {
+  display: inline-block;
+}
+#last-name {
+  display: inline-block;
+}

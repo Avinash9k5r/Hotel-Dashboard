@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Hotels</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#004675;">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Hotels <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item" id="right-nav">
+                <a class="nav-link" id="login">Login</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" id="register">Register</a>
+              </li>
+            
+          </ul>
+          
+        </div>
+      </nav>
+
+      <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content modal-lg">
+    <span class="close" style="text-align:right; margin-bottom: 5px;">&times;</span>
+
+    <div class="tab" style="display: flex; justify-content: space-around;">
+      <button class="tablinks active" onclick="openCity(event, 'London')">CUSTOMER LOGIN</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">HOTEL LOGIN</button>
+      
+    </div>
+    
+    <!-- Tab content -->
+    <div id="London" class="tabcontent active" style="display: block;">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">User ID / Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        
+        <a href="#">Forgot Password?</a>
+         <br>
+        <button type="submit" class="btn btn-primary" style="margin-top: 10px; margin-bottom: 10px; background-color: #004675; padding-right: 50px; padding-left: 50px;">LOGIN</button>
+        <p>Don't have an account yet? Register Now (<a href="">Customer</a> / <a href="">Hotel</a>)</p>
+      </form>
+    </div>
+    
+    <div id="Paris" class="tabcontent">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">User ID / Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        
+        <a href="#">Forgot Password?</a>
+         <br>
+         <button type="submit" class="btn btn-primary" style="margin-top: 10px; margin-bottom: 10px; background-color: #004675; padding-right: 50px; padding-left: 50px;">LOGIN</button>
+        <p>Don't have an account yet? Register Now (<a href="">Customer</a> / <a href="">Hotel</a>)</p>
+      </form>
+    </div>
+        
+  </div>
+
+</div>
+
+      <!-- The Modal -->
+      <div id="myModalRegister" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content modal-lg">
+          <span id="spanRegister" class="close" style="text-align:right; margin-bottom: 5px;">&times;</span>
+      
+          <div class="tab" style="display: flex; justify-content: space-around;">
+            <button class="tablinks active" onclick="openCity(event, 'LondonRegister')">CUSTOMER REGISTER</button>
+            <button class="tablinks" onclick="openCity(event, 'ParisRegister')">HOTEL REGISTER</button>
+            
+          </div>
+          
+          <!-- Tab content -->
+          <div id="LondonRegister" class="tabcontent active" style="display: block;">
+            <form>
+              <div id="two-names">
+              <div class="form-group" id="first-name">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName">
+              </div>
+
+              <div class="form-group" id="last-name">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName">
+              </div>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email Address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              
+              
+              
+               
+              <button type="submit" class="btn btn-primary" style="margin-top: 10px; margin-bottom: 10px; background-color: #004675; padding-right: 50px; padding-left: 50px;">REGISTER</button>
+              <p>Already a member? Login here (<a href="">Customer</a> / <a href="">Hotel</a>)</p>
+            </form>
+          </div>
+          
+          <div id="ParisRegister" class="tabcontent">
+            <form>
+              <div id="two-names">
+              <div class="form-group" id="first-name">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName">
+              </div>
+
+              <div class="form-group" id="last-name">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName">
+              </div>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email Address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              
+               
+              <button type="submit" class="btn btn-primary" style="margin-top: 10px; margin-bottom: 10px; background-color: #004675; padding-right: 50px; padding-left: 50px;">REGISTER</button>
+              <p>Already a member? Login here (<a href="">Customer</a> / <a href="">Hotel</a>)</p>
+            </form>
+          </div>
+              
+        </div>
+      
+      </div>
+
+    
+
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" style="background-color: white; color: black;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          State
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+
+      <div class="dropdown" id="available-date">
+        <button class="btn btn-secondary dropdown-toggle" style="background-color: white; color: black;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Available Date
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search" name="search">
+          <button class="btn btn-white" id="searchButton" type="submit"><i class="fa fa-search"><img src="blue-search.png" alt="" id="searchImage"></i></button>
+        </form>
+      </div>
+
+  
+
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 id="hotel-name" class="card-title" style="padding-bottom: 10px; padding-left: 10px">Hotel Name</h5>
+          <img id="hotel-logo" src="hotel-logo-design.png" alt="">
+          <h6 class="card-subtitle mb-2 text-muted" style="padding-bottom: 20px; padding-left: 10px">Location</h6>
+          <p class="card-text" id="available-date-p" style="padding-left: 10px">Available Date</p>
+          <p class="card-text" id="start-price-p">Start @ 2500/-</p>
+          <div id="book-now">
+            <a href="#" class="card-link">Book Now</a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 id="hotel-name" class="card-title" style="padding-bottom: 10px; padding-left: 10px">Hotel Name</h5>
+          <img id="hotel-logo" src="hotel-logo-design.png" alt="">
+          <h6 class="card-subtitle mb-2 text-muted" style="padding-bottom: 20px; padding-left: 10px">Location</h6>
+          <p class="card-text" id="available-date-p" style="padding-left: 10px">Available Date</p>
+          <p class="card-text" id="start-price-p">Start @ 2500/-</p>
+          <div id="book-now">
+            <a href="#" class="card-link">Book Now</a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 id="hotel-name" class="card-title" style="padding-bottom: 10px; padding-left: 10px">Hotel Name</h5>
+          <img id="hotel-logo" src="hotel-logo-design.png" alt="">
+          <h6 class="card-subtitle mb-2 text-muted" style="padding-bottom: 20px; padding-left: 10px">Location</h6>
+          <p class="card-text" id="available-date-p" style="padding-left: 10px">Available Date</p>
+          <p class="card-text" id="start-price-p">Start @ 2500/-</p>
+          <div id="book-now">
+            <a href="#" class="card-link">Book Now</a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 id="hotel-name" class="card-title" style="padding-bottom: 10px; padding-left: 10px">Hotel Name</h5>
+          <img id="hotel-logo" src="hotel-logo-design.png" alt="">
+          <h6 class="card-subtitle mb-2 text-muted" style="padding-bottom: 20px; padding-left: 10px">Location</h6>
+          <p class="card-text" id="available-date-p" style="padding-left: 10px">Available Date</p>
+          <p class="card-text" id="start-price-p">Start @ 2500/-</p>
+          <div id="book-now">
+            <a href="#" class="card-link">Book Now</a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 id="hotel-name" class="card-title" style="padding-bottom: 10px; padding-left: 10px">Hotel Name</h5>
+          <img id="hotel-logo" src="hotel-logo-design.png" alt="">
+          <h6 class="card-subtitle mb-2 text-muted" style="padding-bottom: 20px; padding-left: 10px">Location</h6>
+          <p class="card-text" id="available-date-p" style="padding-left: 10px">Available Date</p>
+          <p class="card-text" id="start-price-p">Start @ 2500/-</p>
+          <div id="book-now">
+            <a href="#" class="card-link">Book Now</a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 id="hotel-name" class="card-title" style="padding-bottom: 10px; padding-left: 10px">Hotel Name</h5>
+          <img id="hotel-logo" src="hotel-logo-design.png" alt="">
+          <h6 class="card-subtitle mb-2 text-muted" style="padding-bottom: 20px; padding-left: 10px">Location</h6>
+          <p class="card-text" id="available-date-p" style="padding-left: 10px">Available Date</p>
+          <p class="card-text" id="start-price-p">Start @ 2500/-</p>
+          <div id="book-now">
+            <a href="#" class="card-link">Book Now</a>
+            
+          </div>
+        </div>
+      </div>    
+
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 id="hotel-name" class="card-title" style="padding-bottom: 10px; padding-left: 10px">Hotel Name</h5>
+          <img id="hotel-logo" src="hotel-logo-design.png" alt="">
+          <h6 class="card-subtitle mb-2 text-muted" style="padding-bottom: 20px; padding-left: 10px">Location</h6>
+          <p class="card-text" id="available-date-p" style="padding-left: 10px">Available Date</p>
+          <p class="card-text" id="start-price-p">Start @ 2500/-</p>
+          <div id="book-now">
+            <a href="#" class="card-link">Book Now</a>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 id="hotel-name" class="card-title" style="padding-bottom: 10px; padding-left: 10px">Hotel Name</h5>
+          <img id="hotel-logo" src="hotel-logo-design.png" alt="">
+          <h6 class="card-subtitle mb-2 text-muted" style="padding-bottom: 20px; padding-left: 10px">Location</h6>
+          <p class="card-text" id="available-date-p" style="padding-left: 10px">Available Date</p>
+          <p class="card-text" id="start-price-p">Start @ 2500/-</p>
+          <div id="book-now">
+            <a href="#" class="card-link">Book Now</a>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 id="hotel-name" class="card-title" style="padding-bottom: 10px; padding-left: 10px">Hotel Name</h5>
+          <img id="hotel-logo" src="hotel-logo-design.png" alt="">
+          <h6 class="card-subtitle mb-2 text-muted" style="padding-bottom: 20px; padding-left: 10px">Location</h6>
+          <p class="card-text" id="available-date-p" style="padding-left: 10px">Available Date</p>
+          <p class="card-text" id="start-price-p">Start @ 2500/-</p>
+          <div id="book-now">
+            <a href="#" class="card-link">Book Now</a>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 id="hotel-name" class="card-title" style="padding-bottom: 10px; padding-left: 10px">Hotel Name</h5>
+          <img id="hotel-logo" src="hotel-logo-design.png" alt="">
+          <h6 class="card-subtitle mb-2 text-muted" style="padding-bottom: 20px; padding-left: 10px">Location</h6>
+          <p class="card-text" id="available-date-p" style="padding-left: 10px">Available Date</p>
+          <p class="card-text" id="start-price-p">Start @ 2500/-</p>
+          <div id="book-now">
+            <a href="#" class="card-link">Book Now</a>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 id="hotel-name" class="card-title" style="padding-bottom: 10px; padding-left: 10px">Hotel Name</h5>
+          <img id="hotel-logo" src="hotel-logo-design.png" alt="">
+          <h6 class="card-subtitle mb-2 text-muted" style="padding-bottom: 20px; padding-left: 10px">Location</h6>
+          <p class="card-text" id="available-date-p" style="padding-left: 10px">Available Date</p>
+          <p class="card-text" id="start-price-p">Start @ 2500/-</p>
+          <div id="book-now">
+            <a href="#" class="card-link">Book Now</a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 id="hotel-name" class="card-title" style="padding-bottom: 10px; padding-left: 10px">Hotel Name</h5>
+          <img id="hotel-logo" src="hotel-logo-design.png" alt="">
+          <h6 class="card-subtitle mb-2 text-muted" style="padding-bottom: 20px; padding-left: 10px">Location</h6>
+          <p class="card-text" id="available-date-p" style="padding-left: 10px">Available Date</p>
+          <p class="card-text" id="start-price-p">Start @ 2500/-</p>
+          <div id="book-now">
+            <a href="#" class="card-link">Book Now</a>
+            
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <br>
+        <br>
+      </footer>
+
+      
+
+      
+      <script src="index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+</body>
+</html>
